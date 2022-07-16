@@ -1,7 +1,7 @@
 #ifndef COXGRAPH_UTILS_MSG_CONVERTER_H_
 #define COXGRAPH_UTILS_MSG_CONVERTER_H_
 
-#include <open3d/geometry/TriangleMesh.h>
+#include <Open3D/Geometry/TriangleMesh.h>
 #include <cblox_msgs/MapLayer.h>
 #include <cblox_ros/submap_conversions.h>
 #include <coxgraph_msgs/BoundingBox.h>

@@ -6,12 +6,11 @@ add_definitions(-std=c++14 -Werror)
 find_package(catkin_simple REQUIRED)
 catkin_simple(ALL_DEPS_REQUIRED)
 
-find_package(OpenCV REQUIRED)
-include_directories(${OpenCV_INCLUDE_DIRS})
-
 cs_add_library(vio_interface
   src/vio_interface.cpp)
-target_link_libraries(vio_interface ${OpenCV_LIBS})
+target_link_libraries(vio_interface
+    ${CATKIN_LIBRARIES}
+)
 
 ##########
 # EXPORT #

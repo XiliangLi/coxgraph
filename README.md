@@ -50,7 +50,7 @@ You can download the pdf from [here](http://www.cad.zju.edu.cn/home/gfzhang/pape
 3. Clone the repository and dependencies:
 
         cd src
-        git clone git@github.com:XiliangLi/coxgraph.git
+        git clone git@github.com:zju3dv/coxgraph.git
         wstool init
         wstool merge coxgraph/coxgraph_ssh.rosinstall
         wstool update

@@ -1,9 +1,9 @@
 #include "coxgraph/server/visualizer/server_visualizer.h"
 
-#include <open3d/geometry/LineSet.h>
-#include <open3d/io/LineSetIO.h>
-#include <open3d/io/TriangleMeshIO.h>
-#include <open3d/visualization/utility/DrawGeometry.h>
+#include <Open3D/Geometry/LineSet.h>
+#include <Open3D/IO/ClassIO/LineSetIO.h>
+#include <Open3D/IO/ClassIO/TriangleMeshIO.h>
+#include <Open3D/Visualization/Utility/DrawGeometry.h>
 
 #include <chrono>
 #include <future>
@@ -81,8 +81,6 @@ void ServerVisualizer::getFinalGlobalMesh(
       combined_mesh->MergeCloseVertices(0.06);
       combined_mesh->RemoveDuplicatedVertices();
       combined_mesh->RemoveDuplicatedTriangles();
-      combined_mesh->FilterSmoothTaubin(100);
-      combined_mesh->SimplifyVertexClustering(0.05);
     }
     //combined_mesh->ComputeVertexNormals();
     //combined_mesh->ComputeTriangleNormals();

@@ -1,8 +1,8 @@
 #ifndef COXGRAPH_SERVER_VISUALIZER_SERVER_VISUALIZER_H_
 #define COXGRAPH_SERVER_VISUALIZER_SERVER_VISUALIZER_H_
 
-#include <open3d/geometry/TriangleMesh.h>
-#include <open3d/visualization/visualizer/Visualizer.h>
+#include <Open3D/Geometry/TriangleMesh.h>
+#include <Open3D/Visualization/Visualizer/Visualizer.h>
 #include <cblox/mesh/submap_mesher.h>
 #include <ros/ros.h>
 #include <voxblox/io/mesh_ply.h>

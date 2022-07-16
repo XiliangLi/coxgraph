@@ -1,9 +1,9 @@
 #ifndef COXGRAPH_CLIENT_COXGRAPH_CLIENT_H_
 #define COXGRAPH_CLIENT_COXGRAPH_CLIENT_H_
 
-#include <open3d/geometry/LineSet.h>
-#include <open3d/visualization/visualizer/RenderOption.h>
-#include <open3d/visualization/visualizer/Visualizer.h>
+#include <Open3D/Geometry/LineSet.h>
+#include <Open3D/Visualization/Visualizer/RenderOption.h>
+#include <Open3D/Visualization/Visualizer/Visualizer.h>
 #include <coxgraph_msgs/ClientSubmap.h>
 #include <coxgraph_msgs/ClientSubmapSrv.h>
 #include <coxgraph_msgs/PoseHistorySrv.h>
