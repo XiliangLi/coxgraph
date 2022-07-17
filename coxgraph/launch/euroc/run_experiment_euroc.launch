@@ -14,7 +14,7 @@
         <include file="$(find coxgraph)/launch/euroc/vins_client_euroc.launch">
                 <arg name="id" value="0" />
                 <arg name="clock" value="false" />
-                <arg name="play_speed" value="0.1" />
+                <arg name="play_speed" value="0.3" />
                 <arg name="bag_file" value="$(arg bag_file0)" />
                 <arg name="bag_ripped" default="false" />
         </include>
@@ -33,7 +33,7 @@
         <include file="$(find coxgraph)/launch/euroc/vins_client_euroc.launch">
                 <arg name="id" value="1" />
                 <arg name="clock" value="false" />
-                <arg name="play_speed" value="0.1" />
+                <arg name="play_speed" value="0.3" />
                 <arg name="bag_file" value="$(arg bag_file1)" />
                 <arg name="bag_ripped" default="false" />
         </include>
@@ -52,7 +52,7 @@
         <include file="$(find coxgraph)/launch/euroc/vins_client_euroc.launch">
                 <arg name="id" value="2" />
                 <arg name="clock" value="false" />
-                <arg name="play_speed" value="0.1" />
+                <arg name="play_speed" value="0.3" />
                 <arg name="bag_file" value="$(arg bag_file2)" />
                 <arg name="bag_ripped" default="false" />
         </include>
