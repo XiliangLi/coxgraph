@@ -66,6 +66,7 @@ A convenient interface enabling any multi-robot SLAM system to cooperate with **
 ### Experiment Machine Hall
 
 1. Download EuRoC bag files [here](https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets).
-2. Run the launch file:
+2. In this code, we run 2-agent collaborative session on the same machine. If you run 3-agent simultaneously, the performence of **Coxgraph** might degrade since the computational resources are overloaded. Run the launch file:
 
         roslaunch coxgraph run_experiment_euroc.launch
+        roslaunch coxgraph coxgraph_rviz.launch

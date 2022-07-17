@@ -2,9 +2,9 @@
 <launch>
         <param name="use_sim_time" value="false" />
 
-        <arg name="bag_file0" default="/media/zhouxin/66D231E0D231B4E15/Dataset/EuRoC/EuRoC_ros/rosbag/MH_01_easy.bag" />
-        <arg name="bag_file1" default="/media/zhouxin/66D231E0D231B4E15/Dataset/EuRoC/EuRoC_ros/rosbag/MH_02_easy.bag" />
-        <arg name="bag_file2" default="/media/zhouxin/66D231E0D231B4E15/Dataset/EuRoC/EuRoC_ros/rosbag/MH_03_medium.bag" />
+        <arg name="bag_file0" default="/media/lxl/Dataset/EuRoC/EuRoC_ros/rosbag/MH_01_easy.bag" />
+        <arg name="bag_file1" default="/media/lxl/Dataset/EuRoC/EuRoC_ros/rosbag/MH_02_easy.bag" />
+        <arg name="bag_file2" default="/media/lxl/Dataset/EuRoC/EuRoC_ros/rosbag/MH_03_medium.bag1" />
         <arg name="tw_voxblox_config_file" default="$(find coxgraph)/config/tsdf_server_euroc.yaml" />
         <arg name="tsdf_voxel_size" default="0.10" />
         <arg name="truncation_distance" default="0.30" />
@@ -69,7 +69,7 @@
         </include>
 
         <include file="$(find coxgraph)/launch/utils/pose_graph_backend.launch">
-                <arg name="num_agents" default="3" />
+                <arg name="num_agents" default="2" />
         </include>
 
         <include file="$(find coxgraph)/launch/coxgraph_server.launch">

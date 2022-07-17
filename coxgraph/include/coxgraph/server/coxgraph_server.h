@@ -276,7 +276,7 @@ class CoxgraphServer {
     if (config_.publish_global_mesh_on_update && global_mesh_initialized_ &&
         global_mesh_need_update_ / config_.client_number == 4) {
       coxgraph_msgs::FilePath file_path_srv;
-      file_path_srv.request.file_path = "/home/zhouxin/Workspace/coxgraph/output/final_mesh/";
+      file_path_srv.request.file_path = "/home/lxl/Workspace/coxgraph/output/final_mesh/";
       getFinalGlobalMeshCallback(file_path_srv.request, file_path_srv.response);
       global_mesh_need_update_ = 0;
     }
