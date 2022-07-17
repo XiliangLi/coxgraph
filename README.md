@@ -27,10 +27,10 @@ You can download the pdf from [here](http://www.cad.zju.edu.cn/home/gfzhang/pape
 
 ### Requirements
 
-1. Ubuntu 18 or 20;
-2. ROS Melodic or Noetic
-3. OpenCV 3 or 4;
-4. Open3D 0.11 or newer.
+1. Ubuntu 18;
+2. ROS Melodic;
+3. OpenCV 3;
+4. Open3D 0.10.
 
 ### Build
 
@@ -57,16 +57,11 @@ You can download the pdf from [here](http://www.cad.zju.edu.cn/home/gfzhang/pape
 
 4. Start building:
 
-        catkin build coxgraph vins_client_server pose_graph_backend
+        catkin build coxgraph vins_client_server pose_graph_backend image_undistort
 
 ### SLAM Frontend Selection
 
-A convenient interface enabling any multi-robot SLAM system to cooperate with **Coxgraph** is provided named as `coxgraph_mod`. One can easily insert a few lines into other frontend to use it with **Coxgraph**.
-So far, there are three frontends we can use:
-
-1. **vins_client_server**, used in the demo;
-2. **CORB_SLAM**
-3. We also implement a Multi-Robot version of **rovioli** . (in production)
+A convenient interface enabling any multi-robot SLAM system to cooperate with **Coxgraph** is provided named as `coxgraph_mod`. One can easily insert a few lines into other frontend to use it with **Coxgraph**. In this code, we used **vins_client_server** as the frontend.
 
 ### Experiment Machine Hall
 
